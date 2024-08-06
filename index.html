@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Tripathi - Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f7271e6b6b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Harsh Tripathi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                <p>Hi, My name is <span class="purple">Harsh Tripathi</span> and I am a passionate</p>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Harsh_Tripathi_Resume.pdf" download=""><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/Github-HarshTripathi"><button class="btn">Visit Github</button></a>
+                </div>
+            </div>
+            <div class="rightsSection">
+                <img src="images/bg for portfolio.jpeg" alt="">
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/photo 2.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Enthusiastic second-year student skilled in multiple programming languages, adept at problem-solving, and passionate about learning new tech. Proven team player with strong communication. Ready to take on the next challenge!</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>C/C++</span></li>
+                                <li><span>JavaScript</span></li>
+                                <li><span>HTML</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>React.js</span></li>
+                                <li><span>Data Structures and Algorithms</span></li>
+                                <li><span>Software Development Life Cycle (SDLC)</span></li>
+                                <li><span>Version Control with Git and GitHub</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Web Development Intern at Web Stack Academy (Feb 2024 - Apr 2024)</span></li>
+                                <li><span>Software Development Intern at Edunet Foundation (Dec 2023 - Jan 2024)</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>FocusBoost: A Chrome extension with Pomodoro timer and task management features.</span></li>
+                                <li><span>HomelyHub: A rental property listing platform developed using React.js and JavaScript.</span></li>
+                                <li><span>Dynamic News Web Application: Fetches and displays headlines across various categories using Newsapi.</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Guru Gobind Singh Indraprastha University (Expected 2026)</span></li>
+                                <li><span>St. Xavier Secondary School (2022)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Skilled in developing responsive and user-friendly web applications using HTML, CSS, JavaScript, and React.js.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Netflix clone photo.jpg" alt="Netflix Clone">
+                        <div class="layer">
+                            <h3>Netflix Clone</h3>
+                            <a href="https://harsh-clone-site.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Landing page photo.jpg" alt="Landing Page">
+                        <div class="layer">
+                            <h3>Landing Page</h3>
+                            <a href="https://watch-portfolio-page.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/computational tool pic.jpg" alt="Calculator">
+                        <div class="layer">
+                            <h3>Computational Tool</h3>
+                            <a href="https://computational-tool.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact Me</h1>
+                <form action="mailto:tripathiharsh202@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>All rights reserved by <span>Harsh Tripathi</span></p>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Software Engineer'],
+            typeSpeed: 50,
+        });
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
